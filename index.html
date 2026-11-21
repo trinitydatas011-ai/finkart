@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aura Finkart | Loans, Insurance &amp; Investments</title>
+<meta name="description" content="Aura Finkart helps individuals and businesses compare loan options, plan insurance and investments, and apply with personal guidance. Talk to us on call or WhatsApp.">
+<meta name="theme-color" content="#123B75">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3 21l1.5-4.5A8.5 8.5 0 1112 20.5a8.4 8.4 0 01-4-1z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a4 4 0 01-2-2l.8-1-1-2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Top strip -->
+<div class="strip">
+  <div class="wrap strip__in">
+    <a href="tel:" data-tel><svg class="ic"><use href="#i-phone"/></svg><span data-ph="phoneDisplay">+91 00000 00000</span></a>
+    <a href="mailto:" data-mail><svg class="ic"><use href="#i-mail"/></svg><span data-ph="email">hello@aurafinkart.com</span></a>
+    <span class="strip__opt"><svg class="ic"><use href="#i-pin"/></svg><span data-ph="address">Your City, India</span></span>
+    <span class="strip__opt"><svg class="ic"><use href="#i-clock"/></svg><span data-ph="hours">Mon – Sat, 9:30 AM – 6:30 PM</span></span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="wrap header__in">
+    <a href="#top" class="brand" aria-label="Aura Finkart – home">
+      <img src="assets/logo-mark.png" alt="" width="46" height="45">
+      <span class="brand__txt"><b>AURA FINKART</b><small>Your financial journey starts here</small></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <div class="dd">
+        <button class="dd__btn" type="button" aria-expanded="false" aria-controls="ddLoans">Loans <svg class="ic ic--s"><use href="#i-chev"/></svg></button>
+        <ul class="dd__menu" id="ddLoans">
+          <li><button type="button" data-open="personal">Personal Loan</button></li>
+          <li><button type="button" data-open="home">Home Loan</button></li>
+          <li><button type="button" data-open="business">Business Loan</button></li>
+          <li><button type="button" data-open="lap">Loan Against Property</button></li>
+          <li><button type="button" data-open="auto">Auto Loan</button></li>
+          <li><button type="button" data-open="machinery">Machinery Loan</button></li>
+          <li><button type="button" data-open="education">Education Loan</button></li>
+          <li><button type="button" data-open="gold">Gold Loan</button></li>
+        </ul>
+      </div>
+      <a href="#insurance">Insurance</a>
+      <a href="#investments">Investments</a>
+      <a href="#cibil">CIBIL Score</a>
+      <a href="#emi">EMI Calculator</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn--solid nav__apply">Apply for Loan</a>
+    </nav>
+
+    <div class="header__act">
+      <a href="tel:" data-tel class="iconbtn" aria-label="Call us"><svg class="ic"><use href="#i-phone"/></svg></a>
+      <a href="#" data-wa class="iconbtn iconbtn--wa" aria-label="WhatsApp us" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg></a>
+      <a href="#contact" class="btn btn--solid header__apply">Apply for Loan</a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><svg class="ic"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="scrim" id="scrim"></div>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow">Loans · Insurance · Investments</p>
+      <h1>Your financial goals. <em>Our commitment.</em></h1>
+      <p class="lead">Discover the right financial solutions for your personal, family and business needs. From loans to investments, Aura Finkart helps you make informed financial decisions with personalised guidance.</p>
+
+      <ul class="rings" aria-label="Highlights">
+        <li><b>8</b><span>Loan types</span></li>
+        <li><b>50+</b><span>Lenders</span></li>
+        <li><b>1:1</b><span>Guidance</span></li>
+      </ul>
+
+      <div class="hero__cta">
+        <a href="#solutions" class="btn btn--solid btn--lg">Explore Loan Options <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a href="tel:" data-tel class="callblock">
+          <span class="callblock__ico"><svg class="ic"><use href="#i-phone"/></svg></span>
+          <span><small>Talk to our experts</small><b data-ph="phoneDisplay">+91 00000 00000</b></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__media">
+      <img src="assets/happy-customer.jpg" alt="A customer smiling at a desk, holding cash after a successful loan enquiry" width="735" height="490" fetchpriority="high">
+      <form class="quick" data-wa-form aria-label="Quick enquiry">
+        <h2>Quick enquiry</h2>
+        <p>We'll reply on WhatsApp or call you back.</p>
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Mobile<input name="phone" type="tel" inputmode="tel" required pattern="[0-9+\s\-]{10,15}" autocomplete="tel"></label>
+        <label>I need
+          <select name="loan" required data-loan-options></select>
+        </label>
+        <button class="btn btn--wa btn--block" type="submit"><svg class="ic"><use href="#i-wa"/></svg> Send on WhatsApp</button>
+        <p class="msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats" aria-label="Aura Finkart in numbers">
+  <!-- Figures come from config.js. Verify with the client before publishing. -->
+  <div class="wrap stats__grid" id="stats"></div>
+</section>
+
+<!-- CHALLENGES -->
+<section class="sec" id="challenges">
+  <div class="wrap">
+    <header class="head head--c">
+      <p class="eyebrow">Facing these issues?</p>
+      <h2>Are these challenges holding you back?</h2>
+    </header>
+    <div class="trio">
+      <article class="photo-card">
+        <img src="assets/balance-home.jpg" alt="A home model lifted above a pile of coins on a balance" width="735" height="490" loading="lazy">
+        <div><h3>Too many options</h3><p>Rates, tenures and lenders are hard to weigh on your own.</p></div>
+      </article>
+      <article class="photo-card">
+        <img src="assets/bank-deposit.jpg" alt="Illustration of a bank passing a money bag to an outstretched hand" width="736" height="383" loading="lazy">
+        <div><h3>A slow, unclear process</h3><p>Multiple visits and paperwork gaps push your timeline back.</p></div>
+      </article>
+      <article class="photo-card">
+        <img src="assets/hands-coins.jpg" alt="One hand passing a small stack of coins to an open palm" width="736" height="1104" loading="lazy" class="crop-top">
+        <div><h3>Not sure you qualify</h3><p>It's tough to know which loan fits your income and credit profile.</p></div>
+      </article>
+    </div>
+    <p class="after">Spend less time searching. Find the right fit.</p>
+    <p class="center"><a href="#process" class="btn btn--teal">See how it works <svg class="ic"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
+
+<!-- WHAT IS -->
+<section class="what">
+  <div class="wrap">
+    <div class="what__card">
+      <img src="assets/growth-handshake.jpg" alt="A handshake in warm light behind rising coin stacks and a growth arrow" width="736" height="736" loading="lazy">
+      <div class="what__body">
+        <p class="eyebrow eyebrow--on">Simple · Reliable · Effective</p>
+        <h2>What is Aura Finkart?</h2>
+        <p>We are a financial services partner for individuals, families and businesses. We guide you through loans, insurance and investments, and work with a network of banks and NBFCs to find options that suit you.</p>
+        <ul class="what__list">
+          <li><svg class="ic"><use href="#i-check"/></svg>Guided applications</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Flexible options</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Clear, honest support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section class="sec" id="solutions">
+  <div class="wrap">
+    <header class="head head--c">
+      <p class="eyebrow">Loan services</p>
+      <h2>Financial solutions for every stage of life</h2>
+    </header>
+    <div class="loans" id="loanGrid"><!-- built from script.js --></div>
+  </div>
+</section>
+
+<!-- HOME LOAN FEATURE -->
+<section class="sec sec--tight">
+  <div class="wrap split">
+    <div class="split__media"><img src="assets/dream-home.jpg" alt="A hand holding a small brick house model through a map pin" width="736" height="736" loading="lazy"></div>
+    <div class="split__copy">
+      <p class="eyebrow">Home loans</p>
+      <h2>Turn your dream home into reality.</h2>
+      <p>Whether you are buying, building, renovating or extending, we help you understand the loan options available and what each lender is likely to ask for, before you commit.</p>
+      <ul class="ticks">
+        <li><svg class="ic"><use href="#i-check"/></svg>Home purchase financing</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>New home construction</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Renovation and home extension</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Loan against property for other needs</li>
+      </ul>
+      <div class="row">
+        <a href="#contact" class="btn btn--solid" data-pick="Home Loan">Apply for a Home Loan</a>
+        <button class="btn btn--line" type="button" data-open="home">Eligibility &amp; documents</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="sec" id="why">
+  <div class="wrap split split--rev">
+    <div class="split__copy">
+      <p class="eyebrow">Why Aura Finkart</p>
+      <h2>A financial partner you can trust</h2>
+      <ol class="why">
+        <li><b>Dedicated specialists</b><span>Professional assistance throughout the application process.</span></li>
+        <li><b>Personalised guidance</b><span>Solutions based on your needs and eligibility, not a template.</span></li>
+        <li><b>Multiple banking partners</b><span>Access to a network of banks and NBFCs.</span></li>
+        <li><b>Support after you apply</b><span>We stay in touch well beyond the first application.</span></li>
+      </ol>
+    </div>
+    <div class="split__media split__media--round"><img src="assets/shield-cover.jpg" alt="A glass shield surrounded by icons for home, car, health, savings and business" width="480" height="480" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec sec--line" id="process">
+  <div class="wrap">
+    <header class="head head--c">
+      <p class="eyebrow">Three simple steps</p>
+      <h2>How it works</h2>
+    </header>
+    <ol class="steps">
+      <li><span>01</span><h3>Explore &amp; apply</h3><p>Choose your financial requirement and submit your enquiry.</p></li>
+      <li><span>02</span><h3>Review &amp; guidance</h3><p>Our team reviews your requirement and helps you understand suitable lender options and eligibility.</p></li>
+      <li><span>03</span><h3>Lender decision &amp; disbursement</h3><p>The selected bank or NBFC evaluates the application and makes the final approval and disbursement decision.</p></li>
+    </ol>
+    <p class="fine center">Approval and disbursement are subject to lender assessment and are not guaranteed.</p>
+  </div>
+</section>
+
+<!-- DOCUMENTS -->
+<section class="sec">
+  <div class="wrap split">
+    <div class="split__media split__media--tall"><img src="assets/documents.jpg" alt="Illustration of a loan application with salary slip, bank statement and ID card, each ticked" width="720" height="1280" loading="lazy"></div>
+    <div class="split__copy">
+      <p class="eyebrow">Be prepared</p>
+      <h2>Keep these documents ready</h2>
+      <p>Exact requirements depend on the loan type and lender. Having the basics in hand usually makes the process quicker.</p>
+      <div class="docs">
+        <div><h3>Everyone</h3><ul><li>Identity proof</li><li>Address proof</li><li>Recent photographs</li><li>Bank statements</li></ul></div>
+        <div><h3>Salaried</h3><ul><li>Recent salary slips</li><li>Form 16 or ITR</li><li>Employment details</li></ul></div>
+        <div><h3>Self-employed</h3><ul><li>ITR with computations</li><li>Business proof</li><li>GST and financials</li></ul></div>
+      </div>
+      <p class="fine">Our advisor will share the exact checklist for your lender.</p>
+      <a href="#contact" class="btn btn--solid">Get my checklist</a>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="sec sec--line" id="highlights">
+  <div class="wrap">
+    <header class="head head--c">
+      <p class="eyebrow">Loan highlights</p>
+      <h2>Compare popular loan options</h2>
+    </header>
+    <div class="tablewrap">
+      <table class="cmp">
+        <thead><tr><th scope="col">Loan</th><th scope="col">Indicative starting rate</th><th scope="col">Tenure</th><th scope="col"><span class="sr">Action</span></th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Personal Loan</th><td>Ask our advisor</td><td>Varies by lender</td><td><a class="btn btn--solid btn--sm" href="#contact" data-pick="Personal Loan">Apply</a></td></tr>
+          <tr><th scope="row">Home Loan</th><td>Ask our advisor</td><td>Varies by lender</td><td><a class="btn btn--solid btn--sm" href="#contact" data-pick="Home Loan">Apply</a></td></tr>
+          <tr><th scope="row">Car Loan</th><td>Ask our advisor</td><td>Varies by lender</td><td><a class="btn btn--solid btn--sm" href="#contact" data-pick="Auto Loan">Apply</a></td></tr>
+          <tr><th scope="row">Loan Against Property</th><td>Ask our advisor</td><td>Varies by lender</td><td><a class="btn btn--solid btn--sm" href="#contact" data-pick="Loan Against Property">Apply</a></td></tr>
+          <tr><th scope="row">Business Loan</th><td>Ask our advisor</td><td>Varies by lender</td><td><a class="btn btn--solid btn--sm" href="#contact" data-pick="Business Loan">Apply</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fine center">Rates depend on the lender, your profile and prevailing market conditions. Ask us for current offers.</p>
+  </div>
+</section>
+
+<!-- INSURANCE -->
+<section class="sec" id="insurance">
+  <div class="wrap split">
+    <div class="split__copy">
+      <p class="eyebrow">Insurance</p>
+      <h2>Protect what matters most.</h2>
+      <p>Explore insurance solutions designed to help safeguard your family, assets and financial future.</p>
+      <ul class="rows">
+        <li><div><b>Life insurance</b><span>Income protection for the people who depend on you.</span></div><a href="#contact" data-pick="Insurance" aria-label="Enquire about life insurance">Enquire <svg class="ic ic--s"><use href="#i-arrow"/></svg></a></li>
+        <li><div><b>Health insurance</b><span>Cover for medical costs for you and your family.</span></div><a href="#contact" data-pick="Insurance" aria-label="Enquire about health insurance">Enquire <svg class="ic ic--s"><use href="#i-arrow"/></svg></a></li>
+        <li><div><b>Motor insurance</b><span>Cover for your car or two-wheeler.</span></div><a href="#contact" data-pick="Insurance" aria-label="Enquire about motor insurance">Enquire <svg class="ic ic--s"><use href="#i-arrow"/></svg></a></li>
+        <li><div><b>General insurance</b><span>Home, travel and other everyday risks.</span></div><a href="#contact" data-pick="Insurance" aria-label="Enquire about general insurance">Enquire <svg class="ic ic--s"><use href="#i-arrow"/></svg></a></li>
+        <li><div><b>Business insurance</b><span>Protection for premises, stock and operations.</span></div><a href="#contact" data-pick="Insurance" aria-label="Enquire about business insurance">Enquire <svg class="ic ic--s"><use href="#i-arrow"/></svg></a></li>
+      </ul>
+      <p class="fine">Insurance is the subject matter of solicitation. Only approved products are offered.</p>
+    </div>
+    <div class="collage">
+      <img class="collage__a" src="assets/insurance-blocks.jpg" alt="Wooden blocks stacked into a house with the word INSURANCE" width="735" height="820" loading="lazy">
+      <img class="collage__b" src="assets/health-insurance.jpg" alt="A health insurance clipboard, family shield and stethoscope" width="600" height="600" loading="lazy">
+      <img class="collage__c" src="assets/insurance-policy.jpg" alt="An insurance document with a calculator and a gold shield" width="736" height="736" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- INVESTMENTS -->
+<section class="sec sec--teal" id="investments">
+  <div class="wrap">
+    <header class="head head--c head--on">
+      <p class="eyebrow eyebrow--on">Investments</p>
+      <h2>Plan today. Build a stronger financial future.</h2>
+      <p>Long-term planning starts with understanding your goals, your time horizon and how much risk you are comfortable with.</p>
+    </header>
+    <div class="inv">
+      <article><span>01</span><h3>Debt mutual funds</h3><p>Funds that invest mainly in bonds and money-market instruments.</p></article>
+      <article><span>02</span><h3>Equity mutual funds</h3><p>Funds that invest mainly in company shares for long-term growth.</p></article>
+      <article><span>03</span><h3>Bank fixed deposits</h3><p>Deposits for a fixed term at a rate set by the bank.</p></article>
+      <article><span>04</span><h3>Public Provident Fund</h3><p>A government-backed long-term savings scheme.</p></article>
+      <article><span>05</span><h3>Direct equity</h3><p>Buying shares of listed companies directly.</p></article>
+      <article><span>06</span><h3>Gold investments</h3><p>Ways to hold gold as part of a diversified plan.</p></article>
+    </div>
+    <p class="center"><a href="#contact" class="btn btn--light" data-pick="Investments">Book an investment consultation</a></p>
+    <p class="fine fine--on center">Investments are subject to market risk. Returns are not guaranteed. Please read all scheme-related documents carefully.</p>
+  </div>
+</section>
+
+<!-- EMI -->
+<section class="sec" id="emi">
+  <div class="wrap">
+    <header class="head head--c">
+      <p class="eyebrow">Plan your repayment</p>
+      <h2>EMI calculator</h2>
+    </header>
+    <div class="emi">
+      <form class="emi__in" id="emiForm" novalidate>
+        <div class="fld">
+          <div class="fld__top"><label for="amtN">Loan amount (₹)</label><input id="amtN" type="number" inputmode="numeric" min="10000" step="10000" value="1000000"></div>
+          <input id="amt" type="range" min="10000" max="50000000" step="10000" value="1000000" aria-label="Loan amount slider">
+        </div>
+        <div class="fld">
+          <div class="fld__top"><label for="rateN">Interest rate (% p.a.)</label><input id="rateN" type="number" inputmode="decimal" min="0" max="40" step="0.05" value="10.5"></div>
+          <input id="rate" type="range" min="0" max="30" step="0.05" value="10.5" aria-label="Interest rate slider">
+        </div>
+        <div class="fld">
+          <div class="fld__top"><label for="tenN">Tenure</label>
+            <span class="ten"><input id="tenN" type="number" inputmode="numeric" min="1" step="1" value="5"><select id="unit" aria-label="Tenure unit"><option value="Y">Years</option><option value="M">Months</option></select></span>
+          </div>
+          <input id="ten" type="range" min="1" max="30" step="1" value="5" aria-label="Tenure slider">
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn--line" id="emiReset">Reset</button>
+          <a href="#contact" class="btn btn--solid" data-pick="Personal Loan" id="emiApply">Apply for loan <svg class="ic"><use href="#i-arrow"/></svg></a>
+        </div>
+        <p class="msg msg--err" id="emiErr" role="alert"></p>
+      </form>
+      <div class="emi__out">
+        <div class="donut"><canvas id="donut" width="220" height="220" aria-label="Principal versus interest chart" role="img"></canvas><div class="donut__c"><small>Monthly EMI</small><b id="oEmi">₹0</b></div></div>
+        <dl class="emi__list">
+          <div><dt><i class="dot dot--p"></i>Principal</dt><dd id="oP">₹0</dd></div>
+          <div><dt><i class="dot dot--i"></i>Total interest</dt><dd id="oI">₹0</dd></div>
+          <div><dt>Total repayment</dt><dd id="oT">₹0</dd></div>
+          <div><dt>Interest share</dt><dd id="oPct">0%</dd></div>
+        </dl>
+      </div>
+    </div>
+    <p class="fine center">Results are illustrative. Actual lender terms, fees and rates may differ.</p>
+  </div>
+</section>
+
+<!-- CIBIL -->
+<section class="sec sec--line" id="cibil">
+  <div class="wrap cibil">
+    <div class="cibil__copy">
+      <p class="eyebrow">CIBIL score</p>
+      <h2>Understand your credit score. Strengthen your financial future.</h2>
+      <p>A CIBIL score is a three-digit number from 300 to 900 that summarises your credit history. Lenders look at it when deciding whether, and on what terms, to offer you credit.</p>
+      <div class="row">
+        <a href="#contact" class="btn btn--solid" data-pick="Credit score guidance">Talk to us about my score</a>
+      </div>
+      <p class="fine">We do not issue official credit scores. You can get yours directly from an authorised credit bureau.</p>
+    </div>
+    <ol class="factors">
+      <li><b>Payment history</b><span>Paying EMIs and card bills on time matters most.</span></li>
+      <li><b>Credit utilisation</b><span>Keeping card usage well below your limit helps.</span></li>
+      <li><b>Length of credit history</b><span>Older, well-managed accounts build trust.</span></li>
+      <li><b>Credit mix</b><span>A healthy blend of secured and unsecured credit.</span></li>
+      <li><b>New applications</b><span>Many applications in a short time can lower your score.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="sec sec--tight">
+  <div class="wrap">
+    <header class="head head--c">
+      <p class="eyebrow">Our network</p>
+      <h2>Banking &amp; NBFC partners</h2>
+    </header>
+    <div class="partners" id="partners"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec sec--line" id="reviews">
+  <div class="wrap">
+    <header class="head head--c">
+      <p class="eyebrow">Customer stories</p>
+      <h2>What our customers say</h2>
+    </header>
+    <div class="car" id="carousel">
+      <div class="car__view"><div class="car__track" id="track"></div></div>
+      <div class="car__ctrl">
+        <button id="prev" type="button" aria-label="Previous review"><svg class="ic flip"><use href="#i-arrow"/></svg></button>
+        <div class="dots" id="dots"></div>
+        <button id="next" type="button" aria-label="Next review"><svg class="ic"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <header class="head head--c">
+      <p class="eyebrow">About us</p>
+      <h2>Your trusted partner in financial solutions</h2>
+      <p>Aura Finkart is a financial services provider working with banks and NBFCs to offer personal, home, business, property, auto, machinery, education and gold loans, along with insurance and investment guidance.</p>
+    </header>
+    <div class="trio trio--text">
+      <article><h3>Our vision</h3><p>To support responsible and sustainable financial development through accessible financial solutions for individuals, households and businesses.</p></article>
+      <article><h3>Our mission</h3><p>To provide personalised financial guidance, reliable service and suitable financial solutions based on customer requirements.</p></article>
+      <article><h3>Our commitment</h3><p>Clear information, honest advice and support that continues after your application is submitted.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec--line" id="faq">
+  <div class="wrap wrap--narrow">
+    <header class="head head--c">
+      <p class="eyebrow">Questions answered</p>
+      <h2>Frequently asked questions</h2>
+    </header>
+    <div class="faq">
+      <details open><summary>What types of loans does Aura Finkart offer?</summary><p>We help with personal, home, business, loan against property, auto, machinery, education and gold loans, along with insurance and investment guidance.</p></details>
+      <details><summary>How can I apply for a personal loan?</summary><p>Send an enquiry through the form, call us or message us on WhatsApp. Our team will review your requirement and guide you through lender options.</p></details>
+      <details><summary>What documents are required for a loan?</summary><p>Requirements differ by loan type and lender. Typically this includes identity proof, address proof, income documents and bank statements. We will share the exact list for your case.</p></details>
+      <details><summary>How is loan eligibility determined?</summary><p>Lenders consider factors such as income, credit history, existing obligations, age and the type of loan. The final decision is made by the lender.</p></details>
+      <details><summary>What is a CIBIL score?</summary><p>It is a three-digit number between 300 and 900 that summarises your credit history. A higher score generally improves your chances with lenders.</p></details>
+      <details><summary>How does an EMI calculator work?</summary><p>It applies the reducing-balance formula EMI = P × r × (1+r)ⁿ / ((1+r)ⁿ − 1), where P is the principal, r is the monthly interest rate and n is the number of monthly instalments.</p></details>
+      <details><summary>Can I compare different loan options?</summary><p>Yes. We help you understand suitable lender options so you can compare rates, tenure and terms before deciding.</p></details>
+      <details><summary>How long does loan processing take?</summary><p>It depends on the loan type, documents and lender. We will give you a realistic estimate once your requirement is reviewed.</p></details>
+      <details><summary>Are loan approvals guaranteed?</summary><p>No. Approval and disbursement are decided solely by the bank or NBFC after assessing your application.</p></details>
+      <details><summary>How can I contact a financial advisor?</summary><p>Call us, message us on WhatsApp or fill in the enquiry form below. An advisor will get back to you.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap contact__grid">
+    <div class="contact__copy">
+      <p class="eyebrow eyebrow--on">Let's talk</p>
+      <h2>Let's find the right financial solution for you.</h2>
+      <p>Tell us your financial requirements. Our team will help you understand the available options.</p>
+      <ul class="clist">
+        <li><svg class="ic"><use href="#i-phone"/></svg><a href="tel:" data-tel data-ph="phoneDisplay">+91 00000 00000</a></li>
+        <li><svg class="ic"><use href="#i-mail"/></svg><a href="mailto:" data-mail data-ph="email">hello@aurafinkart.com</a></li>
+        <li><svg class="ic"><use href="#i-pin"/></svg><span data-ph="address">Your City, India</span></li>
+        <li><svg class="ic"><use href="#i-clock"/></svg><span data-ph="hours">Mon – Sat, 9:30 AM – 6:30 PM</span></li>
+      </ul>
+      <div class="row">
+        <a href="tel:" data-tel class="btn btn--light"><svg class="ic"><use href="#i-phone"/></svg> Call now</a>
+        <a href="#" data-wa class="btn btn--wa" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Speak to an advisor</a>
+      </div>
+    </div>
+
+    <form class="apply" id="applyForm" data-wa-form>
+      <h3>Apply now</h3>
+      <p class="apply__sub">Your details open as a ready-to-send WhatsApp message to our team.</p>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="two">
+        <label>Full name<input name="name" required autocomplete="name"></label>
+        <label>Mobile number<input name="phone" type="tel" inputmode="tel" required pattern="[0-9+\s\-]{10,15}" autocomplete="tel"></label>
+      </div>
+      <div class="two">
+        <label>City<input name="city" autocomplete="address-level2"></label>
+        <label>I need
+          <select name="loan" id="loanSel" required data-loan-options></select>
+        </label>
+      </div>
+      <label>Approximate amount (₹)<input name="amount" type="number" inputmode="numeric" min="0" step="1000"></label>
+      <label>Message (optional)<textarea name="msg" rows="3"></textarea></label>
+      <label class="agree"><input type="checkbox" name="agree" required> <span>I agree to be contacted by Aura Finkart about my enquiry.</span></label>
+      <button class="btn btn--wa btn--block" type="submit"><svg class="ic"><use href="#i-wa"/></svg> Send enquiry on WhatsApp</button>
+      <p class="msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div>
+      <img src="assets/logo-full-white.png" alt="Aura Finkart – your financial journey starts here" width="240" height="148" loading="lazy" class="foot__logo">
+      <p class="foot__about">A financial services partner offering loans, insurance and investment guidance with personalised support.</p>
+    </div>
+    <nav aria-label="Quick links"><h4>Quick links</h4><a href="#solutions">Loans</a><a href="#insurance">Insurance</a><a href="#investments">Investments</a><a href="#cibil">CIBIL score</a><a href="#emi">EMI calculator</a><a href="#about">About us</a></nav>
+    <nav aria-label="Loan services"><h4>Loan services</h4><a href="#contact" data-pick="Personal Loan">Personal Loan</a><a href="#contact" data-pick="Home Loan">Home Loan</a><a href="#contact" data-pick="Business Loan">Business Loan</a><a href="#contact" data-pick="Loan Against Property">Loan Against Property</a><a href="#contact" data-pick="Auto Loan">Auto Loan</a><a href="#contact" data-pick="Gold Loan">Gold Loan</a></nav>
+    <div><h4>Contact</h4><a href="tel:" data-tel data-ph="phoneDisplay">+91 00000 00000</a><a href="mailto:" data-mail data-ph="email">hello@aurafinkart.com</a><span data-ph="address">Your City, India</span></div>
+  </div>
+  <div class="wrap foot__legal">
+    <p><b>Disclaimer:</b> Loan approval, rates, tenure and disbursement are subject to the assessment and policies of the respective banks and NBFCs and are not guaranteed. Investments are subject to market risks; read all scheme-related documents carefully. Insurance is the subject matter of solicitation. Aura Finkart does not guarantee approvals or returns.</p>
+    <div class="foot__bar"><span>© <span id="yr"></span> Aura Finkart. All rights reserved.</span><span><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a> · <a href="#">Disclaimer</a></span></div>
+  </div>
+</footer>
+
+<!-- Mobile action bar -->
+<div class="mbar" role="navigation" aria-label="Quick contact">
+  <a href="tel:" data-tel class="mbar__call"><svg class="ic"><use href="#i-phone"/></svg>Call</a>
+  <a href="#" data-wa class="mbar__wa" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg>WhatsApp</a>
+  <a href="#contact" class="mbar__apply">Apply</a>
+</div>
+<a href="#" data-wa class="wafloat" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg class="ic"><use href="#i-wa"/></svg></a>
+
+<!-- Loan detail dialog -->
+<dialog class="modal" id="loanDlg" aria-labelledby="dlgTitle">
+  <div class="modal__in">
+    <button class="modal__x" type="button" id="dlgClose" aria-label="Close"><svg class="ic"><use href="#i-close"/></svg></button>
+    <p class="eyebrow">Loan details</p>
+    <h3 id="dlgTitle"></h3>
+    <p id="dlgAbout"></p>
+    <div class="modal__cols">
+      <div><h4>Commonly used for</h4><ul id="dlgUses"></ul></div>
+      <div><h4>Usual eligibility</h4><ul id="dlgElig"></ul></div>
+      <div><h4>Documents</h4><ul id="dlgDocs"></ul></div>
+    </div>
+    <p class="fine">Indicative only. Eligibility, documents, rates and approval are decided by the lender.</p>
+    <div class="row">
+      <a href="#contact" class="btn btn--solid" id="dlgApply">Apply now</a>
+      <a href="#" data-wa class="btn btn--wa" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask on WhatsApp</a>
+    </div>
+  </div>
+</dialog>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
