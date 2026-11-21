@@ -88,9 +88,10 @@
   });
 
   /* ---------- Header: sticky state, drawer, dropdown, active link ---------- */
-  const nav = $("#nav"), burger = $("#burger"), scrim = $("#scrim"), dd = $(".dd"), ddBtn = $(".dd__btn");
+  const header = $("#header"), nav = $("#nav"), burger = $("#burger"), scrim = $("#scrim"), dd = $(".dd"), ddBtn = $(".dd__btn");
   const setMenu = open => {
     nav.classList.toggle("open", open); scrim.classList.toggle("on", open);
+    header.classList.toggle("menu-open", open);
     burger.setAttribute("aria-expanded", open);
     burger.querySelector("use").setAttribute("href", open ? "#i-close" : "#i-menu");
     document.body.style.overflow = open ? "hidden" : "";
@@ -101,7 +102,7 @@
   ddBtn.addEventListener("click", () => { const o = dd.classList.toggle("open"); ddBtn.setAttribute("aria-expanded", o); });
   document.addEventListener("click", e => { if (!dd.contains(e.target)) { dd.classList.remove("open"); ddBtn.setAttribute("aria-expanded", "false"); } });
   addEventListener("keydown", e => { if (e.key === "Escape") { setMenu(false); dd.classList.remove("open"); } });
-  addEventListener("resize", () => { if (innerWidth > 900) setMenu(false); });
+  addEventListener("resize", () => { if (innerWidth > 1020) setMenu(false); });
 
   const links = $$('.nav>a[href^="#"]:not(.btn)');
   const spy = new IntersectionObserver(es => es.forEach(e => {
